@@ -4,10 +4,10 @@ import com.alipay.sofa.SOFABootWebSpringApplication;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.embedded.EmbeddedWebApplicationContext;
+import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -24,7 +24,7 @@ public abstract class AbstractTestBase {
     public static final String SOFA_REST_PORT = "8341";
 
     @Autowired
-    public ServletWebServerApplicationContext server;
+    public EmbeddedWebApplicationContext server;
 
     /**
      * 8080
