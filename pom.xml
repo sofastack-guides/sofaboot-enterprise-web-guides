@@ -68,4 +68,20 @@
         <module>app/endpoint</module>
         <module>app/web</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>antcloudrelease</id>
+            <name>Ant Cloud</name>
+            <url>http://mvn.cloud.alipay.com/nexus/content/groups/open</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>antcloudrelease</id>
+            <name>Ant Cloud</name>
+            <url>http://mvn.cloud.alipay.com/nexus/content/groups/open</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
